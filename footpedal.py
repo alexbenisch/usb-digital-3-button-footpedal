@@ -22,10 +22,10 @@ PEDAL_FORWARD = 0x04
 
 # Map each pedal to a list of keys to hold while pressed
 MAPPING = {
-    PEDAL_FORWARD: [e.KEY_LEFTMETA, e.KEY_O],
+    PEDAL_FORWARD: [e.KEY_SPACE],
 }
 
-CAPABILITIES = {e.EV_KEY: [e.KEY_LEFTMETA, e.KEY_O]}
+CAPABILITIES = {e.EV_KEY: [e.KEY_SPACE]}
 
 
 def run(device_path: Path):
