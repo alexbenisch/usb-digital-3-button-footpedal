@@ -1,0 +1,12 @@
+[Unit]
+Description=USB foot pedal key event daemon (Digta Foot Control 540)
+After=dev-input-footpedal.device
+BindsTo=dev-input-footpedal.device
+
+[Service]
+ExecStart=/usr/bin/python3 /home/alex/repos/usb-digital-3-button-footpedal/footpedal.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

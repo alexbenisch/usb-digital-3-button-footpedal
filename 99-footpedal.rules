@@ -1,0 +1,1 @@
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="15d8", ATTRS{idProduct}=="0024", SYMLINK+="input/footpedal", TAG+="systemd"
